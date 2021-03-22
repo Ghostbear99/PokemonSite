@@ -65,6 +65,7 @@ body{
 #move-search-input{
     border-radius:5px;
     padding:5px;
+    width:15%;
 }
 #move-search-btn, #show-all-moves-btn{
     border-radius:5px;

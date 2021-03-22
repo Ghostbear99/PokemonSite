@@ -103,7 +103,7 @@ window.onload = () => {
                         fillMoves(moveName, moveEffect);
                     }else{
                         moveText.value = '';
-                        moveText.placeholder = 'This Pokemon does not have this move';
+                        moveText.placeholder = 'Pokemon does not have move';
                     }
                 }else{
                     moveText.value = '';
