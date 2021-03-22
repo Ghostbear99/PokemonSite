@@ -91,12 +91,23 @@ window.onload = () => {
             url: 'pokemon/move/' + move, success: function (res) {
                 if(!(res === 'error')){
                     const move = res;
-                    const moveName = move.name;
-                    const moveEffect = move.effect_entries[0].short_effect;
-                    fillMoves(moveName, moveEffect);
+                    const doesPokemonHaveMove = false;
+                    for(let i =0; i < move.learned_by_pokemon.length; i++){
+                        if(move.learned_by_pokemon[i].name === pokemon.name){
+                            doesPokemonHaveMove = true;
+                        }
+                    }
+                    if(doesPokemonHaveMove == true){
+                        const moveName = move.name;
+                        const moveEffect = move.effect_entries[0].short_effect;
+                        fillMoves(moveName, moveEffect);
+                    }else{
+                        moveText.value = '';
+                        moveText.placeholder = 'This Pokemon does not have this move';
+                    }
                 }else{
                     moveText.value = '';
-                    moveText.placeholder = 'No move found'
+                    moveText.placeholder = 'No move found';
                 }
             }
         });
