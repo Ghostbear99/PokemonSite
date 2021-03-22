@@ -91,7 +91,7 @@ window.onload = () => {
             url: 'pokemon/move/' + move, success: function (res) {
                 if(!(res === 'error')){
                     const move = res;
-                    const doesPokemonHaveMove = false;
+                    let doesPokemonHaveMove = false;
                     for(let i =0; i < move.learned_by_pokemon.length; i++){
                         if(move.learned_by_pokemon[i].name === pokemon.name){
                             doesPokemonHaveMove = true;
