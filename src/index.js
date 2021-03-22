@@ -10,7 +10,7 @@ var options = {
   }
   var P = new Pokedex(options);
 
-const port = 8000;
+const port = process.env.PORT || 8000;
 
 app.use(express.static('public'));
 app.get('/pokemon/:pokemonName', function(req, res){
