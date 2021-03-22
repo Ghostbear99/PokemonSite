@@ -1,0 +1,19 @@
+{
+  "name": "pokemon-projects",
+  "version": "1.0.0",
+  "main": "index.js",
+  "dependencies": {
+    "axios": "^0.21.1",
+    "axios-better-stacktrace": "^2.1.1",
+    "express": "^4.17.1",
+    "pokeapi-js-wrapper": "^1.2.0",
+    "pokedex-promise-v2": "^3.3.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "description": ""
+}

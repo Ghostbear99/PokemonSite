@@ -1,0 +1,34 @@
+#search-div{
+    margin:0;
+    padding:0;
+    height:20%;
+}
+#search-input{
+    width:60%;
+    padding:10px;
+    margin: 15% 0% 15% 20%;
+    border-radius: 5px;
+}
+#search-btn{
+    padding: 10px 50px;
+    border-radius:5px;
+}
+#pokemon-abilities-head, #pokemon-items-head, #pokemon-moves-head{
+    margin-left:2%;
+}
+.ability-container, .items-container, .moves-container{
+    border:solid;
+    width:25%;
+    float:left;
+    border-radius:10px;
+    margin: 0% 2% 2% 2%;
+    padding-left:1%;
+    padding-right:1%;
+
+}
+.ability-container h3, .items-container h3, .moves-container h3{
+    text-align:center;
+}
+.clear{
+    clear:both;
+}
