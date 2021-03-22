@@ -211,7 +211,6 @@ window.onload = () => {
             $.ajax({
                 url: 'pokemon/move/' + moveName, success: function (res) {
                     const move = res;
-                    console.log(move);
                     const moveName = move.name;
                     const moveEffect = move.effect_entries[0].short_effect;
                     fillMoves(moveName, moveEffect);
