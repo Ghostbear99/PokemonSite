@@ -14,7 +14,7 @@ const port = process.env.PORT || 8000;
 
 app.use(express.static('public'));
 app.get('/', function(req, res){
-    res.send('Hello World');
+    res.sendFile(__dirname + '/public/home.html');
 })
 app.get('/pokemon/:pokemonName', function(req, res){
     P.getPokemonByName(req.params.pokemonName, function(response, error) { // with callback
