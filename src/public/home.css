@@ -9,26 +9,19 @@ body{
     background-image: url(https://i.pinimg.com/originals/20/e3/fa/20e3fae34eb27d0500417f9b3590f6ff.jpg);
 }
 #search-input{
-    width:60%;
-    padding:10px;
-    margin: 15% 0% 15% 20%;
+    padding: 10px;
     border-radius: 5px;
 }
 #search-btn{
-    padding: 10px 50px;
+    padding: 10px 10px;
     border-radius:5px;
 }
 #pokemon-abilities-head, #pokemon-items-head, #pokemon-moves-head{
     margin-left:2%;
 }
 .ability-container, .items-container, .moves-container{
-    border:solid;
-    width:25%;
     float:left;
-    border-radius:10px;
-    margin: 0% 2% 2% 2%;
     padding-left:1%;
-    padding-right:1%;
 
 }
 .ability-container h3, .items-container h3, .moves-container h3{
@@ -38,15 +31,12 @@ body{
     clear:both;
 }
 #stats-div{
-    width:75%;
-    margin-left:28%;
+    width:100%;
 }
 #stat-left{
-    width:50%;
     float:left;
 }
 #stat-right{
-    width: 50%;
     float:left;
 }
 #pokemon-name{
@@ -54,20 +44,93 @@ body{
 }
 #move-head-div-left{
     margin-left:2%;
-    width:5%;
-    float:left;
 }
 #move-head-div-right{
     margin-top:1.2%;
-    width:70%;
-    float:left;
 }
 #move-search-input{
     border-radius:5px;
-    padding:5px;
-    width:15%;
 }
 #move-search-btn, #show-all-moves-btn{
     border-radius:5px;
-    padding: 5px 25px;
+}
+@media only screen and (min-width: 992px) {
+        #search-input{
+            width:60%;
+            margin: 15% 0% 15% 20%;
+        }
+        .ability-container, .items-container, .moves-container{
+            border:solid;
+            width:25%;
+            border-radius:10px;
+            margin: 0% 2% 2% 2%;
+            padding-right:1%;
+        
+        }
+        #stats-div{
+            width:75%;
+            margin-left:28%;
+        }
+        #stat-left{
+            width:50%;
+        }
+        #stat-right{
+            width: 50%;
+        }
+        #move-head-div-left{
+            width:5%;
+            float:left;
+        }
+        #move-head-div-right{
+            width:70%;
+            float:left;
+        }
+        #move-search-input{
+            padding:5px;
+            width:15%;
+        }
+        #move-search-btn, #show-all-moves-btn{
+            padding: 5px 25px;
+        }
+}
+
+@media only screen and (max-width: 600px) {
+    #search-input{
+        width:80%;
+        margin: 50% 0% 15% 1%;
+    }
+    .ability-container, .items-container, .moves-container{
+        width:100%;
+        border-top:solid;
+        border-bottom:solid;
+        margin: 0% 0% 2% 0%;
+        padding-left:1%;
+    
+    }
+    #stats-div{
+        width:100%;
+    }
+    #stat-left{
+        width:40%;
+        margin-left:5%;
+    }
+    #stat-right{
+        width: 40%;
+        margin-left:5%;
+    }
+    #move-head-div-left{
+        width:100%;
+    }
+    #move-head-div-right{
+        width:100%;
+    }
+    #move-search-input{
+        padding:10px;
+        width:100%;
+    }
+    #move-search-btn, #show-all-moves-btn{
+        padding: 10px 30px;
+        margin: 1% 1% 1% 1%;
+        width:45%;
+    }
 }
