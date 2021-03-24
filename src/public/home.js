@@ -34,7 +34,11 @@ window.onload = () => {
         $.ajax({url:'pokemon/' + pokemonName, success:function(res){
             if(!(res === 'error')){
                 searchDiv.style.height = '20%';
-                searchText.style.margin = '5% 0% 5% 20%';
+                if(window.matchMedia("(max-width: 600px)").matches){
+                    searchText.style.margin = '20% 0% 15% 1%';
+                }else{
+                    searchText.style.margin = '5% 0% 5% 20%';
+                }
         
                 pokemonDiv.style.display = 'inline';
     
